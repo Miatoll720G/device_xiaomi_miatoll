@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/apns-conf-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
     $(LOCAL_PATH)/configs/etc/apns-conf-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
 
+# MIUICamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
