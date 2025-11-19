@@ -16,6 +16,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Viper4re
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
